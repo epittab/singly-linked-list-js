@@ -142,6 +142,7 @@ class SinglyLinkedList {
     reverse(){
         if (this.length === 0) return undefined;
         if (this.length === 1) return this;
+        
         let currentNode = this.head;
         this.head = this.tail;
         this.tail = currentNode;
